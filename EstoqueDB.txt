@@ -1,0 +1,14 @@
+CREATE TABLE Pecas (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(100) NOT NULL,
+    PartNumber VARCHAR(50) NOT NULL,
+    PrecoCusto DECIMAL(10, 2) NOT NULL,
+    Quantidade INT NOT NULL
+);
+
+CREATE TABLE LogErros (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Mensagem TEXT NOT NULL,
+    StackTrace TEXT NOT NULL,
+    DataHora DATETIME NOT NULL
+);
